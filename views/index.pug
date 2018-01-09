@@ -1,0 +1,9 @@
+html
+  head
+    title=app_title
+  body
+    pre
+      ul
+        each val in examples
+          li
+            a(href=val.split('/').slice(1,val.split('/').length).join('/'))=val
